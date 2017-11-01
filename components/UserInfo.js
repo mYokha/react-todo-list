@@ -2,17 +2,17 @@ import React, { Component } from 'react'
 
 class UserInfo extends Component {
 
-  handleNewId () {
+  handleNewId() {
     this.props.createNewUserId()
   }
 
   render() {
     return (
-      <div>
-        <div>{this.props.user.usernme}</div>
-        <div>{this.props.user.id}</div>
+      <li>
+        <div>username: {this.props.user.username}</div>
+        <div>id: {this.props.user.id}</div>
         <button onClick={this.handleNewId.bind(this)}>Update with random ID</button>
-      </div>
+      </li>
     )
   }
 

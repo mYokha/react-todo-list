@@ -20,10 +20,10 @@ let actions = {
     }
   },
 
-  createNewUserId: function () {
+  createNewUserId: function() {
     return {
       type: 'CREATE_USER_ID',
-      id: Date.now()
+      id: Math.round(Math.random() * 100)
     }
   }
 

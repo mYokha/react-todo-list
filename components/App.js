@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import TodoInput from './TodoInput'
 import TodoList from './TodoList'
-import UserInfo from './UserInfo'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import actions from '../redux/actions'
+import UserInfo from './UserInfo'
 
 class App extends Component {
 
